@@ -1,4 +1,4 @@
-﻿  using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,10 +8,12 @@ namespace data_structures_and_algorithms
 {
     internal class BigONotation
     {
-        public void ConstantTimeComplexitity()
+        public int ConstantTimeComplexitity()
         {
             int i = 0;
             int j = 1;
+
+            return j + i;
         }
 
         public void LinearTimeComplexitity() 
@@ -28,7 +30,7 @@ namespace data_structures_and_algorithms
 
         public void QuadraticTimeComplexitity()
         {
-            var n = int.Parse(Console.ReadLine());
+           var n = 6;
 
             for (int r = 1; r <= n; r++)
             {
